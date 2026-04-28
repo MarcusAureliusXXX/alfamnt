@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ALFA MNT — Geopolitical Intelligence & Research Platform</title>
-<meta name="description" content="AI-powered geopolitical research platform studying how world events correlate with market movements. 120+ sources monitored. Every analysis tracked transparently.">
+<title>ALFA MNT | Geopolitical Intelligence & Research Platform</title>
+<meta name="description" content="Geopolitical research platform studying how world events correlate with market movements. Every analysis tracked transparently against real outcomes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -14,9 +14,9 @@
     --bg-elevated: #101220;
     --border: #1a1c2e;
     --border-accent: #252840;
-    --text: #e2e4ec;
-    --text-dim: #7a7e9a;
-    --text-muted: #3e4060;
+    --text: #f0f2f8;
+    --text-dim: #a8acc4;
+    --text-muted: #6a6e8a;
     --green: #00e87b;
     --green-glow: #00e87b22;
     --amber: #f0a030;
@@ -181,76 +181,6 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* ANALYSIS PREVIEW */
-  .preview {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    overflow: hidden;
-    margin: 0 auto 90px;
-    max-width: 880px;
-  }
-
-  .preview-bar {
-    display: flex; align-items: center;
-    justify-content: space-between;
-    padding: 10px 18px;
-    background: var(--bg-elevated);
-    border-bottom: 1px solid var(--border);
-    font-size: 10px; letter-spacing: 1.5px;
-    color: var(--text-dim);
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  .preview-bar .live {
-    color: var(--green);
-    display: flex; align-items: center; gap: 6px;
-  }
-
-  .preview-bar .live::before {
-    content: ''; width: 5px; height: 5px;
-    background: var(--green); border-radius: 50%;
-    animation: pulse 1.5s infinite;
-  }
-
-  .preview-table {
-    width: 100%; font-size: 12px;
-    border-collapse: collapse;
-  }
-
-  .preview-table th {
-    text-align: left; padding: 10px 18px;
-    font-weight: 500; color: var(--text-muted);
-    font-size: 9px; letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--border);
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  .preview-table td {
-    padding: 12px 18px;
-    border-bottom: 1px solid #12142a;
-    color: var(--text-dim);
-  }
-
-  .preview-table tr:hover td { background: #ffffff02; }
-
-  .cat-badge {
-    display: inline-block;
-    padding: 2px 8px; border-radius: 2px;
-    font-size: 9px; font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  .cat-red { background: #ff334415; color: #ff5566; }
-  .cat-amber { background: #f0a03015; color: var(--amber); }
-  .cat-blue { background: #3070e015; color: var(--blue); }
-
-  .sev { color: var(--text); font-weight: 600; font-family: 'JetBrains Mono', monospace; }
-  .conf { color: var(--green); font-weight: 500; }
-
   /* WHAT IT IS */
   .what-section {
     padding: 80px 0;
@@ -284,9 +214,11 @@
   /* FEATURES */
   .features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 60px 0 80px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .feature-card {
@@ -349,7 +281,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    max-width: 700px;
+    max-width: 720px;
   }
 
   .founder-quote {
@@ -569,7 +501,7 @@
     </div>
     <div class="header-status">
       <div class="status-dot"></div>
-      120+ FEEDS ACTIVE
+      SYSTEM ACTIVE
     </div>
   </header>
 
@@ -578,76 +510,20 @@
     <div class="hero-tag">▸ Geopolitical research & education</div>
     <h1>Understand how world events<br>move <span class="accent">markets</span></h1>
     <p class="hero-desc">
-      ALFA MNT monitors 120+ open-source intelligence feeds, classifies geopolitical events by severity and category, and studies how they correlate with market movements — tracking every analysis against real outcomes in a transparent public research record.
+      ALFA MNT is a geopolitical intelligence platform that classifies world events by severity and studies how they correlate with market movements, tracking every analysis against real outcomes in a transparent public research record.
     </p>
     <a href="https://app.alfa-mnt.com/audit" class="hero-cta">View the Research Record</a>
-    <div class="hero-sub">Free public access — every analysis, every outcome, full transparency</div>
+    <div class="hero-sub">Every analysis. Every outcome. No edits. No hindsight.</div>
   </section>
-
-  <!-- ANALYSIS PREVIEW -->
-  <div class="preview">
-    <div class="preview-bar">
-      <span>ANALYSIS FEED — SAMPLE OUTPUT</span>
-      <span class="live">LIVE</span>
-    </div>
-    <table class="preview-table">
-      <thead>
-        <tr>
-          <th>CATEGORY</th>
-          <th>EVENT</th>
-          <th>SEVERITY</th>
-          <th>CONFIDENCE</th>
-          <th>ASSETS STUDIED</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="cat-badge cat-red">Middle East</span></td>
-          <td>Israeli strikes on Beirut intensify</td>
-          <td class="sev">8/10</td>
-          <td class="conf">85%</td>
-          <td>CL=F, LMT, GLD</td>
-        </tr>
-        <tr>
-          <td><span class="cat-badge cat-red">Middle East</span></td>
-          <td>Tehran rejects Hormuz deadline</td>
-          <td class="sev">7/10</td>
-          <td class="conf">85%</td>
-          <td>STNG, FRO, XLE</td>
-        </tr>
-        <tr>
-          <td><span class="cat-badge cat-amber">Ukraine/Russia</span></td>
-          <td>Grain export disruption confirmed</td>
-          <td class="sev">7/10</td>
-          <td class="conf">80%</td>
-          <td>ZW=F, NTR, DBA</td>
-        </tr>
-        <tr>
-          <td><span class="cat-badge cat-blue">Red Sea</span></td>
-          <td>Houthi attacks on commercial vessels</td>
-          <td class="sev">9/10</td>
-          <td class="conf">90%</td>
-          <td>ZIM, BDRY, FDX</td>
-        </tr>
-        <tr>
-          <td><span class="cat-badge cat-amber">China Trade</span></td>
-          <td>New semiconductor export controls</td>
-          <td class="sev">6/10</td>
-          <td class="conf">70%</td>
-          <td>TSM, SOXX, VNM</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 
   <!-- WHAT IT IS -->
   <section class="what-section">
     <div class="section-label">// What is ALFA MNT</div>
-    <h2 class="section-title">Research-grade geopolitical intelligence,<br>accessible to everyone</h2>
+    <h2 class="section-title">Real-time geopolitical intelligence.<br>Verifiable track record.</h2>
     <div class="section-body">
-      <p>Traditional geopolitical intelligence costs $5,000–$100,000 per year from firms like Stratfor, Eurasia Group, and Dataminr. ALFA MNT applies the same analytical rigor — <em>monitoring events, classifying severity, mapping historical market correlations</em> — at a fraction of the cost.</p>
+      <p>ALFA MNT monitors world events as they happen, classifies them by severity and category through a military intelligence framework, and studies how they correlate with market movements in real time.</p>
       <br>
-      <p>Every analysis is tracked against real market outcomes and published transparently. When our methodology identifies a correlation, we say so. When it doesn't, we publish that too. <em>The research record speaks for itself.</em></p>
+      <p>What separates the platform from a news feed is accountability. Every analysis is tracked against actual market outcomes and published in an open research record. <em>No edits. No hindsight. No exceptions.</em></p>
     </div>
   </section>
 
@@ -655,53 +531,43 @@
   <div class="features">
     <div class="feature-card">
       <div class="feature-num">01</div>
-      <div class="feature-title">120+ Intelligence Sources</div>
-      <div class="feature-desc">Wire services, government databases, defense publications, commodity channels, Reddit communities, and social media — scraped, deduplicated, and classified every 90 seconds.</div>
+      <div class="feature-title">Real-Time Event Monitoring</div>
+      <div class="feature-desc">Global events are detected, classified, and analyzed as they happen. Breaking developments are surfaced through severity-weighted alerts before they reach mainstream coverage.</div>
     </div>
     <div class="feature-card">
       <div class="feature-num">02</div>
-      <div class="feature-title">AI Event Classification</div>
-      <div class="feature-desc">Each event is analyzed for geopolitical significance, assigned a severity score, and mapped to historically correlated market sectors with causal reasoning and contrarian considerations.</div>
+      <div class="feature-title">Severity-Classified Analysis</div>
+      <div class="feature-desc">Each event is analyzed for geopolitical significance, assigned a severity score, and mapped to historically correlated market sectors. Outputs include causal reasoning and counter-perspectives.</div>
     </div>
     <div class="feature-card">
       <div class="feature-num">03</div>
-      <div class="feature-title">Transparent Research Record</div>
-      <div class="feature-desc">Every analysis is tracked against real market outcomes. Correlation confirmed or not confirmed — published openly. No cherry-picking, no hidden failures. Full accountability.</div>
+      <div class="feature-title">Verifiable Research Record</div>
+      <div class="feature-desc">Every analysis tracked against real market outcomes. Confirmed or not confirmed, published openly. No cherry-picking, no hidden failures, no retroactive edits.</div>
     </div>
     <div class="feature-card">
       <div class="feature-num">04</div>
-      <div class="feature-title">Historical Pattern Analysis</div>
-      <div class="feature-desc">The system studies how similar events have historically correlated with market movements, identifying patterns across severity levels, event types, and time horizons.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">05</div>
-      <div class="feature-title">16 Event Categories</div>
-      <div class="feature-desc">Middle East escalation, Ukraine/Russia, China trade, Red Sea shipping, defense budgets, sanctions, agricultural supply, and more — each with dedicated correlation research.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-num">06</div>
       <div class="feature-title">Built by a Veteran</div>
-      <div class="feature-desc">Designed by a combat veteran and defense contractor who spent years reading chaotic environments in Iraq. The same analytical framework, applied to global markets.</div>
+      <div class="feature-desc">Designed by a combat veteran and defense contractor who spent years reading chaotic environments in Iraq. The same analytical framework, applied to studying global markets.</div>
     </div>
   </div>
 
   <!-- STATS -->
   <div class="stats">
     <div class="stat">
-      <div class="stat-num">120+</div>
-      <div class="stat-label">Intelligence Sources</div>
+      <div class="stat-num">175</div>
+      <div class="stat-label">Completed Analyses</div>
     </div>
     <div class="stat">
-      <div class="stat-num">32,000+</div>
-      <div class="stat-label">Articles Analyzed</div>
+      <div class="stat-num">48.0%</div>
+      <div class="stat-label">Correlation Rate</div>
     </div>
     <div class="stat">
-      <div class="stat-num">1,700+</div>
-      <div class="stat-label">Events Classified</div>
+      <div class="stat-num">30</div>
+      <div class="stat-label">Active Analyses</div>
     </div>
     <div class="stat">
-      <div class="stat-num">16</div>
-      <div class="stat-label">Research Categories</div>
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Continuous Monitoring</div>
     </div>
   </div>
 
@@ -710,12 +576,10 @@
     <div class="section-label">// The founder</div>
     <div class="founder-content">
       <div class="founder-quote">
-        "ALFA MNT runs on the same instincts I built over years as a soldier and defense contractor — reading chaos in real time, identifying the second and third order effects before they materialize."
+        "ALFA MNT runs on the same instincts I built over years as a soldier and defense contractor. Reading chaos in real time, identifying the second and third order effects before they materialize."
       </div>
       <div class="founder-bio">
-        <strong>The founder</strong> spent years as a soldier and defense contractor in Iraq, where reading chaotic environments, connecting dots others miss, and delivering actionable intelligence was the job. This wasn't data science — it was survival. The same framework that predicted logistical problems in combat zones now monitors 120+ intelligence feeds and studies how geopolitical events ripple through financial markets.
-        <br><br>
-        What makes this credible isn't the AI or the technology. It's that the methodology comes from someone who actually lived inside the events the system analyzes. A tech founder would have the algorithm but not the instinct. The founder has both.
+        <strong>The founder</strong> spent years as a soldier and defense contractor in Iraq, where reading chaotic environments, connecting dots others miss, and delivering actionable intelligence was the job. This wasn't data science. It was survival. The same framework that predicted logistical problems in combat zones now powers a platform that studies how geopolitical events ripple through financial markets.
       </div>
     </div>
   </section>
@@ -727,15 +591,15 @@
     <div class="audit-box">
       <div class="audit-stats">
         <div>
-          <div class="audit-stat-num">50+</div>
+          <div class="audit-stat-num">175</div>
           <div class="audit-stat-label">Completed Analyses</div>
         </div>
         <div>
-          <div class="audit-stat-num">46%</div>
+          <div class="audit-stat-num">48.0%</div>
           <div class="audit-stat-label">Correlation Rate</div>
         </div>
         <div>
-          <div class="audit-stat-num">35</div>
+          <div class="audit-stat-num">30</div>
           <div class="audit-stat-label">Active Analyses</div>
         </div>
       </div>
@@ -770,9 +634,9 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <span>ALFA MNT © 2026 — Geopolitical Intelligence & Research Platform</span>
+    <span>ALFA MNT © 2026 | Geopolitical Intelligence & Research Platform</span>
     <span>
-      <a href="mailto:disasterstudies18@gmail.com">Contact</a>
+      <a href="mailto:contact@alfa-mnt.com">Contact</a>
     </span>
   </footer>
 
